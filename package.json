@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "i": "npm install --registry=https://registry.npm.taobao.org",
-    "start": "node app cross-env NODE_ENV=production",
+    "dev": "node app cross-env NODE_ENV=production",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "engines": {
