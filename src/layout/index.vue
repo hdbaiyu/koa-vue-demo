@@ -5,7 +5,7 @@
         background: #f5f7f9;
         position: relative;
         border-radius: 4px;
-        overflow: hidden;
+        // overflow: hidden;
     }
     .layout-breadcrumb{
         padding: 10px 15px 0;
@@ -13,7 +13,7 @@
     .layout-content{
         min-height: 200px;
         margin: 15px;
-        overflow: hidden;
+        // overflow: hidden;
         background: #fff;
         border-radius: 4px;
     }
@@ -71,7 +71,7 @@
                     </MenuItem>
                     <MenuItem name="3">
                         <Icon type="ios-analytics" :size="iconSize"></Icon>
-                        <span class="layout-text" @click="testAlert('选项 3')">选项 3</span>
+                        <span class="layout-text" @click="todo">to do 3</span>
                     </MenuItem>
                 </Menu>
             </Col>
@@ -123,6 +123,10 @@
                     this.spanLeft = 5;
                     this.spanRight = 19;
                 }
+            },
+            todo () {
+              let vue = this
+              vue.$router.push('/todo');
             },
             testAlert (text) {
                 //alert('testsfsfs')

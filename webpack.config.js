@@ -42,6 +42,11 @@ module.exports = {
                 loader: 'babel-loader',
                 /* 排除模块安装目录的文件 */
                 exclude: /node_modules/
+            },
+            { 
+                test: /\\\\.js$/,
+                loader: 'babel',
+                exclude: /node_modules/
             }
         ]
     },
