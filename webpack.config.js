@@ -18,7 +18,7 @@ new webpack.DefinePlugin({
 module.exports = {
     /* 输入文件 */
     entry: {
-        main: './src/entry/main.js'
+        main:["webpack-hot-middleware/client?noInfo=true&reload=true","./src/entry/main.js"],
     },
     output: {
         /* 输出目录，没有则新建 */
